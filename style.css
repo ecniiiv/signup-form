@@ -1,0 +1,165 @@
+@import url("./Norse-Bold.otf");
+
+html {
+  font-family: "Norse", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+}
+
+.main-header {
+  background-image: url("./halie-west-25xggax4bSA-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 40%;
+  height: 100vh;
+  border: 1px solid;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-header .logo-cont {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1em;
+  transform: translateY(-4em);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.main-header .logo-cont h1 {
+  color: white;
+  font-size: 3rem;
+}
+
+.main-header img {
+  width: 5em;
+}
+.main-header .credits {
+  position: absolute;
+  bottom: 1em;
+  align-self: center;
+}
+
+.main-header .credits,
+.main-header a {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.8rem;
+}
+
+/* MAIN */
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.form-header {
+  display: flex;
+  align-items: center;
+
+  background: #eeeeee;
+  height: 50%;
+  padding-left: 2.5em;
+}
+
+.form-header-p {
+  display: flex;
+  flex-direction: column;
+
+  gap: 2rem;
+  width: 80%;
+
+  transform: translateY(2.5em);
+}
+
+.form-header-p p {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+/* FORM INPUTS */
+
+.inputs-container {
+  box-shadow: 0 2px 5px #bbbbbb8a;
+  padding: 1em 2.5em;
+  margin-bottom: 1em;
+}
+
+.inputs {
+  display: flex;
+  gap: 10em;
+}
+
+.inputs-l,
+.inputs-r {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #444444;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  font-size: 1.5rem;
+}
+
+fieldset input {
+  width: 20em;
+  height: 2em;
+  padding: 0 0.5em;
+  border: 1px solid #ccc;
+}
+
+fieldset input:valid {
+  border-color: lightgreen;
+}
+fieldset input:invalid {
+  border-color: lightcoral;
+}
+
+fieldset .submit-btn {
+  transform: translateX(3em);
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  gap: 1em;
+
+  font-weight: 600;
+}
+
+fieldset .submit-btn a {
+  color: darkgreen;
+}
+
+fieldset button {
+  background: #596d48;
+  color: #eeeeee;
+  font-weight: 600;
+  padding: 1em 3em;
+  border-radius: 10px;
+  border: none;
+
+  cursor: pointer;
+
+  box-shadow: 0 1px 3px #bbbbbb8a;
+}
